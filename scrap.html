@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div
+        class="container well"
+        ng-app="MainApp"
+        ng-controller="MainCtrl"
+>
+    <div class="item" ng-repeat="item in items">
+        <i class="icon-lightbulb {{item.status}}"></i>
+        {{item.text}}
+     <span id="sliderLabel">
+      <input type="checkbox">
+      <span id="slider">
+        <span id="sliderOn">ON</span>
+        <span id="sliderOff">OFF</span>
+        <span id="sliderBlock"></span>
+      </span>
+    </span>
+    <span class="btn-group pull-right">
+      <button class="btn btn-mini btn-inverse">
+          <i class="icon-eye-open icon-large"></i>
+      </button>
+      <button class="btn btn-mini btn-danger">
+          <i class="icon-trash icon-large"></i>
+      </button>
+    </span>
+    </div>
+</div>
+
+
+
+</body>
+</html>

@@ -5,6 +5,7 @@
         <title>Angular Search Demo</title>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="controller.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/components/card.min.css">
     </head>
     <body>
         <div ng-app="mainApp">
@@ -12,7 +13,17 @@
             <div ng-controller="dataCTRL">
                 <ul>
                     <li ng-repeat="x in myData | filter:searchBox">
-                        {{ x.text + ', ' + x.status }}
+                        <!--{{ x.text + ', ' + x.status }}-->
+                        <div class="ui card">
+                            <!--<div class="image">-->
+                                <!--<img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="pg_parts/background.jpg">-->
+                            <!--</div>-->
+                            <div class="extra">
+                                {{x.text}}
+                                <div class="ui star Group Name" data-Group Name="4"></div>
+                            </div>
+                        </div>
+
                     </li>
                 </ul>
             </div>
