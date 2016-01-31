@@ -5,5 +5,5 @@ header('Access-Control-Allow-Methods: GET, POST, OPTIONS');//http://stackoverflo
 require_once('Jengine.php');
 
 
-$template=Jengine::json_template('http://localhost/PHP-JSONengine/angular_test/data.json');
+$template=Jengine::json_template('http://localhost/AngularSearch/data.json');
 echo $template;
