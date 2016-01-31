@@ -13,10 +13,9 @@
             <div ng-controller="dataCTRL">
                 <ul>
                     <li ng-repeat="x in myData | filter:searchBox">
-                        <!--{{ x.text + ', ' + x.status }}-->
                         <div class="ui card">
                             <div class="image">
-                                <img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="http://media.salon.com/2013/09/moon.jpg">
+                                <img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="{{x.Image}}">
                             </div>
                             <div class="extra">
                                <div>{{x.Name}}</div>
