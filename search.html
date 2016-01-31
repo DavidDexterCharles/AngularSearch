@@ -15,11 +15,13 @@
                     <li ng-repeat="x in myData | filter:searchBox">
                         <!--{{ x.text + ', ' + x.status }}-->
                         <div class="ui card">
-                            <!--<div class="image">-->
-                                <!--<img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="pg_parts/background.jpg">-->
-                            <!--</div>-->
+                            <div class="image">
+                                <img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="http://media.salon.com/2013/09/moon.jpg">
+                            </div>
                             <div class="extra">
-                                {{x.Name}}
+                               <div>{{x.Name}}</div>
+                               <div>{{x.City}}</div>
+                                <div>{{x.Country}}</div>
                                 <!--<div class="ui star Group Name" data-Group Name="4"></div>-->
                             </div>
                         </div>
