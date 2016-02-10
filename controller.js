@@ -18,9 +18,9 @@ app.controller('dataCTRL', function($scope, $http) {
         $scope.myData = response.data;
         $scope.searchPoly = function(item){
         	if (!$scope.polySearch || 
-        		(item.Name.toLowerCase().indexOf($scope.polySearch) != -1) || 
-        		(item.City.toLowerCase().indexOf($scope.polySearch) != -1)  ||
-        		(item.Country.toLowerCase().indexOf($scope.polySearch) != -1) )
+        		(item.Name.toLowerCase().indexOf($scope.polySearch.toLowerCase()) != -1) || 
+        		(item.City.toLowerCase().indexOf($scope.polySearch.toLowerCase()) != -1)  ||
+        		(item.Country.toLowerCase().indexOf($scope.polySearch.toLowerCase()) != -1) )
 		    return true;
 		    return false;
         };
