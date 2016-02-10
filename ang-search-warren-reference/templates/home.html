@@ -1,0 +1,22 @@
+<h2 class="row">{{title}}</h2>
+<div class="col-md-12">
+	<div class='col-md-4'>Number<input type="text" class='form-control' data-ng-model='searchIn.num'></div>
+	<div class='col-md-4'>Square<input type="text" class='form-control' data-ng-model='searchIn.sqr'></div>
+	<div class='col-md-4'>Cube<input type="text" class='form-control' data-ng-model='searchIn.cube'></div>
+	<div class="col-md-12">
+		<table class='table table-responsive'>
+			<thead>
+				<th>Number</th>
+				<th>Square</th>
+				<th>Cube</th>
+			</thead>
+			<tbody>
+				<tr ng-repeat='cube in cubes | filter:searchIn | orderBy: "-cube" | limitTo: 10'>
+					<td>{{cube.num}}</td>
+					<td>{{cube.sqr}}</td>
+					<td>{{cube.cube}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>	
+</div>

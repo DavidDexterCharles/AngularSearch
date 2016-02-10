@@ -9,10 +9,14 @@
     </head>
     <body>
         <div ng-app="mainApp">
-            <input type="text" ng-model="searchBox">
+            Name<input class='form-control' type="text" data-ng-model="searchBox.Name">
+            City<input class='form-control' type="text" data-ng-model="searchBox.City">
+            Country<input class='form-control' type="text" data-ng-model="searchBox.Country">
+
+            Poly<input class='form-control' type="text" data-ng-model="polySearch">
             <div ng-controller="dataCTRL">
                 <ul>
-                    <li ng-repeat="x in myData | filter:searchBox">
+                    <li ng-repeat="x in myData | filter:searchPoly">
                         <div class="ui card">
                             <div class="image">
                                 <img style="width:20px;height:20px"; class="ui middle aligned  rounded spaced image" src="{{x.Image}}">
