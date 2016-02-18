@@ -1,0 +1,34 @@
+[
+  {
+    "id": "s_13",
+    "label": "abdominal pain"
+  },
+  {
+    "id": "s_309",
+    "label": "abdominal swelling"
+  },
+  {
+    "id": "s_18",
+    "label": "abdominal pain, chronic"
+  },
+  {
+    "id": "s_12",
+    "label": "abdominal pain, sudden"
+  },
+  {
+    "id": "s_277",
+    "label": "abdominal distension"
+  },
+  {
+    "id": "s_1195",
+    "label": "abdominal pain, severe"
+  },
+  {
+    "id": "s_1187",
+    "label": "abdominal pain comes and goes"
+  },
+  {
+    "id": "s_15",
+    "label": "abdominal pain when I cough"
+  }
+]
